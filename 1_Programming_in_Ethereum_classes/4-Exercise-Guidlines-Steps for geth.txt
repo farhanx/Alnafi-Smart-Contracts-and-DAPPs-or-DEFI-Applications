@@ -1,0 +1,30 @@
+Reference: https://geth.ethereum.org/docs/getting-started
+
+1 - Must have geth if not then download it.
+2 - Run geth and let it download all blocks 
+
+ >F:\Program Files\Geth>geth   --datadir G:\test_geth_dir\ --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" 
+
+3 - create a new account for rinkeby
+
+geth --rinkeby account new
+
+F:\Program Files\Geth>geth attach url
+
+4 - get free ethers from faucet.rinkeby.io 
+
+5 - unlock the account which must be used  
+Parameter info(Account, do we need to give password,amount of seconds for timout) 
+ 
+> personal.unlockAccount(eth.accounts[0],null,1500) 
+
+6 - check if your geth is sync yet?
+eth.syncing 
+
+7 - migrate your contracts
+
+> truffle migrate --network rinkeby
+
+8 - Troubleshoot: make sure on geth attach you have already unlocked the user account otherwise it may give error for account.
+
+9 - use contract communication on geth attach

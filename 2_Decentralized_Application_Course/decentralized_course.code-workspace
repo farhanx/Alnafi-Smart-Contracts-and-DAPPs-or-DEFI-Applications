@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "path": "1_metamask_connection_test"
+        },
+        {
+            "path": "2_nodejs_server_app"
+        },
+        {
+            "path": "3_nodejs_web3Js_test"
+        },
+        {
+            "path": "4_ipfs_exercise"
+        },
+        {
+            "path": "5_election_dapp"
+        }
+    ],
+    "settings": {
+        "git.ignoreLimitWarning": true
+    }
+}

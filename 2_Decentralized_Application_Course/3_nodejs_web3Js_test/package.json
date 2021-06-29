@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "web3": "^1.3.6"
+  },
+
+  "type": "commonjs"
+}

@@ -1,0 +1,9 @@
+To run Terminal inside Visual Code
+-------------------------------------
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1
+
+Command To allow:
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+Command To Restrict:
+Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser

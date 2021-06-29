@@ -1,0 +1,67 @@
+1 - Create Contract 
+2 - Download HDWallet
+3 - Create new account at MetaMask
+4 - Get some free Ethers
+5 - Export Ethereum account Private Key
+6 - Configure key in Truffle
+7 - Signup Infura 
+8 - Login Infura
+9 - Create and get infura project id and secret key
+10- Configure Infra url and keys
+11- Migrate contract and deploy on ethereum test network
+12- Get transaction hash 
+13- Visualize directly on the test network explorer 
+14 - interact with contract on live test network 
+
+Console session with ropsten
+-----------------------------
+ > truffle console --network ropsten
+ > migrate
+ 
+ if you do not want to connect with console use below
+ > truffle migrate --network ropsten
+
+
+Check Account you have added:
+-----------------------------
+truffle(ropsten)> accounts
+
+
+Check balance you have
+-----------------------------
+truffle(ropsten)> web3.eth.getBalance(accounts[0])
+
+
+Check new instance of your contract
+-------------------------------------
+truffle(ropsten)> let instance = await hello_infura2.deployed()
+truffle(ropsten)> instance
+truffle(ropsten)> instance.address
+truffle(ropsten)> instance.setUserInfo(32,"Javed",true)
+
+
+Use a contract at specific contract
+------------------------------------------
+truffle(ropsten)> let specificInstance = await hello_infura2.at("0xa0C021Af78eF2Add2c7dd79c9310fF5E62066a7c")
+
+Send Ethers to a contract (We will discuss this in DAPP Course)
+---------------------------------------------
+truffle(ropsten)> instance.send(web3.utils.toWei("1", "ether")).then(function(result) {});
+
+check instance balance
+-----------------------------------------------
+web3.eth.getBalance(instance.address)
+
+
+Running like java script function
+----------------------------------------
+instance.setUserInfo(65,"Khan",false).then(function(result){ }); // this will show nothing
+
+or 
+
+instance.setUserInfo(65,"Khan",false).then(function(result){ console.log(result)}); //this will show result
+
+
+Running Javascript file
+------------------------------------------------
+truffle(development)> require('./yourfile.js')

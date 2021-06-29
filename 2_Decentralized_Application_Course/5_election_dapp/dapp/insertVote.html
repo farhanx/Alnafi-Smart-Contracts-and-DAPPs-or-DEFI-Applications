@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Insert a Vote</title>
+    </head>
+    <body>
+
+
+        <h1> Insert your Vote</h1>
+
+        <div>
+
+            <label for="parties">Current Parties</label> 
+            <br><br>
+            <select id="parties" name="parties"> 
+            </select>
+
+            <br><br>
+            <label for="nicop"> National ID Card Number </label><br>
+            <input type="text" id="nicop" name="nicop"> <br>  <br>
+            
+            <label for="account"> Voter's Ethereum Account</label><br>
+            <input type="text" id="account" name="account" value="" readonly> <br>   
+
+            <input type="button" value="Cast" onclick="insertVote();">
+
+
+
+            <br>
+            <h2> Blockchain Transaction Result: </h2>
+            <div id="resultdiv" style="color: green;">
+            </div>
+            
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+        <script type="text/javascript" src="js/configs/web3_config.js"></script>
+        <script type="text/javascript" src="js/configs/contracts_config.js"></script>
+        <script type="text/javascript" src="js/operations/insertVote.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+1 - create package file
+2 - create index html file
+3 - npm i lite-server --save-dev 
+4 - add script part in package 
+  "scripts": { "start": "lite-server"},
+5 - run the server and see if html works fine.
+6 - install server and web3 library
+> npm i web3 --save
+your web3 library is installed now.
+
+7 - use  "type": "commonjs" inside package.json
+
+8 - now run node command prompt (make sure you are inside root folder where node_modules exist)
+> node
+
+9 - now initialize web3 object
+> var Web3Ob = require('web3')
+
+10 - Now check web3 object
+> Web3Ob 
+
+11 - Open Ganache
+
+12 - Go back to node console and copy gaanche rpc url
+
+> var web3 = new Web3Ob('HTTP://127.0.0.1:7545')
+
+13 - Now copy any account address from ganache and paste it with the js library function
+
+> web3.eth.getBalance('0x42b5981AF7E54BF75Ba07aA7cC78Aab80a6A2C35',(err,bal)=>{balance = bal})
+
+14 - You can use infura address as well to connect with main net  https://mainnet.infura.io/v3/df1802765e3d4541a898b5f5980c7cae 
+
+15 - Now create app.js file and add 
+
+const Web3 = require('web3')
+console.log(Web3);
+
+16 - Then run this file with node 
+
+node ./src/app.js
+
+17. add web3 code for testing
+
+const web3 = new Web3(window.ethereum);
+console.log(web3);
+const accounts =  web3.eth.getAccounts();
+console.log(accounts);
+
+18. Add in html page following libs
+
+<script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+<script type="text/javascript" src="./src/index.js"></script>
+
+18. Run your page.
