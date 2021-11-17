@@ -4,3 +4,4 @@ web3_config.js linguist-language=Web3j
 newCandidateIPFS.js linguist-language=IPFS
 profileIPFS.js linguist-language=IPFS
 ipfs_config linguist-language=Web3j
+*.html linguist-detectable=false
