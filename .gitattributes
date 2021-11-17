@@ -5,3 +5,4 @@ newCandidateIPFS.js linguist-language=IPFS
 profileIPFS.js linguist-language=IPFS
 ipfs_config linguist-language=Web3j
 *.html linguist-detectable=false
+*.js linguist-detectable=false
