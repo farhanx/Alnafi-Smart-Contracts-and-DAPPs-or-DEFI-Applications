@@ -1,11 +1,18 @@
 1 - create package file
+
 2 - create index html file
+
 3 - npm i lite-server --save-dev 
+
 4 - add script part in package 
   "scripts": { "start": "lite-server"},
+
 5 - run the server and see if html works fine.
+
 6 - install server and web3 library
-> npm i web3 --save
+
+> npm install web3@1.10.0 --save   
+
 your web3 library is installed now.
 
 7 - use  "type": "commonjs" inside package.json
