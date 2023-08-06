@@ -15,16 +15,23 @@
 4 - create repository 
  > ipfs init
 
-5 - Ipfs get and view ipfs readme file  
- > ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
+Now we have the entire node configuration under our system. Close all command lines consoles and open a new command line window.
 
-6 - Check number of directories
- > ipfs ls /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/
+5 - Using command line windows go to the IPFS directory and use the below command to publish any file e.g. Readme.md
+> C:\ipfs\kubo_v0.21.0_windows-amd64\kubo>ipfs add "Readme.md"
 
-7 - view other file 
- > ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/about    
+This will return a unique CID hash 
+> added QmakTN4o7NW5nJTqbMzAu9KhTQsN7Cn3tXpfeRTEaTPABY Readme.md
 
-8 - Upload new file
+6 - Create a new folder myFiles , and then go to the commandline in the same folder. Use the below command to retrieved the published file
+> ipfs get QmakTN4o7NW5nJTqbMzAu9KhTQsN7Cn3tXpfeRTEaTPABY
+It will return you the same file you have publised 
+
+
+7 - Experiments with other files
+
+
+8 - Publish new file
  > ipfs add "anyfile.ext"
 
 9 - Download same file 
@@ -33,7 +40,7 @@
 10 - Download same file with proper extension
  > ipfs get "QmRHFV12qcftPzYT3LetKxQtW49GiMM6FPbBorABRC9eXf" > "FILENAME.EXT""
 
-11 - Upload directory on the ipfs
+11 - Publish directory on the ipfs
  > ipfs add -r "directory name"
 
 12 -  download directory
