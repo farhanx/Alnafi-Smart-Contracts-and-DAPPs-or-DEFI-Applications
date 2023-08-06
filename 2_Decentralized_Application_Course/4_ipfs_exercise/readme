@@ -27,6 +27,12 @@ This will return a unique CID hash
 > ipfs get QmakTN4o7NW5nJTqbMzAu9KhTQsN7Cn3tXpfeRTEaTPABY
 It will return you the same file you have publised 
 
+7- Get the out of the file on the screen 
+> ipfs cat QmakTN4o7NW5nJTqbMzAu9KhTQsN7Cn3tXpfeRTEaTPABY
+
+Command	Description
+ipfs cat	Outputs the contents of a file to the console.
+ipfs get	Downloads a file to your computer.
 
 7 - Experiments with other files
 
