@@ -111,3 +111,6 @@ Replace QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP with your actual CID to a
 
 Using different gateways can provide redundancy and help ensure that your content is accessible even if one gateway experiences downtime.
 
+Using kubo, determine if any peers are advertising the <CID> you are requesting:
+
+ipfs routing findprovs <CID>
