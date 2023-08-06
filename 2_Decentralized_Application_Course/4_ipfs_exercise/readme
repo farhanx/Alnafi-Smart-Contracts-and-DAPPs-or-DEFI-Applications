@@ -74,5 +74,15 @@ ipfs get	Downloads a file to your computer.
   https://ipfs.io/ipfs/CID_HASH
 
   
+PFS gateways are free to use. However, there are some gateways that charge for their services. For example, Filebase offers a paid plan that includes dedicated gateways with no request limits.
+
+Here is a table that summarizes the free IPFS gateways:
+
+Gateway	Provider	Free?
+ipfs.io	Protocol Labs	Yes
+gateway.pinata.cloud	Pinata	Yes
+cloudflare-ipfs.com	Cloudflare	Yes
+infura.io/ipfs	Infura	Yes
+ens.domains/ipfs	ENS	Yes
 
 
