@@ -1,4 +1,12 @@
-1 - Download IPFS client ( Command Prompt ) https://dist.ipfs.io/#go-ipfs  
+1 - Download IPFS client ( Command Prompt )  (Note the new name of GO-IPFS Client is KUBO)
+
+ > Click: https://dist.ipfs.tech/#kubo or https://dist.ipfs.io/#go-ipfs  (old link)
+ > Download the OS version binary e.g. Kubo for windows  Windows
+ > extract the ipfs folder in an approperiate directory for instance like e.g C:\ipfs\kubo_v0.21.0_windows-amd64
+ > You will find following inside the directory e.g. 
+    a- install.sh
+    b- ipfs.exe
+    c- License and Readme files
 
 2 - Place IPFS folder and add its environmental variable
 
