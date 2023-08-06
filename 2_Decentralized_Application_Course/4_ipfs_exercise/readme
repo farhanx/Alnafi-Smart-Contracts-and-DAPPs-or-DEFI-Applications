@@ -73,7 +73,7 @@ ipfs get	Downloads a file to your computer.
   
   https://ipfs.io/ipfs/CID_HASH
 
-  
+
 PFS gateways are free to use. However, there are some gateways that charge for their services. For example, Filebase offers a paid plan that includes dedicated gateways with no request limits.
 
 Here is a table that summarizes the free IPFS gateways:
@@ -85,4 +85,29 @@ cloudflare-ipfs.com	Cloudflare	Yes
 infura.io/ipfs	Infura	Yes
 ens.domains/ipfs	ENS	Yes
 
+How to access your content from multiple gateways 
+
+To view content stored in IPFS using a specific CID (QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP in your example) through different IPFS gateways, you simply need to append the CID to the URL of the respective IPFS gateway. Here's how you can do it:
+
+Using ipfs.io:
+
+URL: https://ipfs.io/ipfs/QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP
+Using cloudflare-ipfs.com:
+
+URL: https://cloudflare-ipfs.com/ipfs/QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP
+Using dweb.link:
+
+URL: https://dweb.link/ipfs/QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP
+Using infura.io:
+
+URL: https://ipfs.infura.io/ipfs/QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP
+Using pinata.cloud:
+
+URL: https://gateway.pinata.cloud/ipfs/QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP
+Using gateway.ipfs.macholibre.org:
+
+URL: https://gateway.ipfs.macholibre.org/ipfs/QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP
+Replace QmXVt4zMaTuWEmWbf88KfVvN4Q2TQRk9bQvYLjVBrY8voP with your actual CID to access your content through any of the above IPFS gateways. Each URL will display the content associated with that CID, such as a web page, image, or other files, depending on what you've stored in IPFS.
+
+Using different gateways can provide redundancy and help ensure that your content is accessible even if one gateway experiences downtime.
 
