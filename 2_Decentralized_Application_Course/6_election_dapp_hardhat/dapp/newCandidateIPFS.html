@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Dashboard of DAPP</title>
+    </head>
+    <body>
+
+
+        <h1> Insert a new Candidate for the Election</h1>
+
+        <form>
+
+            <label for="fname">First Name</label> <br>
+            <input type="text" id="fname" name="fname">  <br>
+
+            <label for="lname">Last Name</label> <br>
+            <input type="text" id="lname" name="lname">  <br>
+
+            <label for="party">Party Name</label> <br>
+            <input type="text" id="party" name="party">  <br>
+
+            <label for="symbol">Party symbol</label> <br>
+            <input type="text" id="symbol" name="symbol">  <br>
+
+            <label for="ec_address">Ethereum Address</label> <br>
+            <input type="text" id="ec_address" name="ec_address">  <br><br>
+            <input name="docfile" type="file" accept=".jpg,.gif,.png" onchange="addInIPFS(event)">
+
+            <input type="button" value="Add" onclick="onSubmitForm();">
+
+        </form>
+
+        <br>
+        <h2> Blockchain Transaction Result: </h2>
+        <div id="resultdiv" style="color: green;">
+        </div>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+
+        <script type="text/javascript" src="js/configs/web3_config.js"></script>
+        <script type="text/javascript" src="js/configs/contracts_config.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/kubo-rpc-client/dist/index.min.js" integrity="sha384-yjkaZpiH92f2ifLInL26WHFOmGxSCMp8biMvcF3iOERSUmiMM9bMXSaqOKlVCXQr" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/configs/ipfs_config.js"></script>
+
+
+        <script type="text/javascript" src="js/operations/newCandidateIPFS.js"></script>
+
+
+    </body>
+</html>
