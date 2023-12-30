@@ -1,12 +1,19 @@
 // SPDX-License-Identifier: GPL-3.0 
 
 /*
+IMPORTANT UPDATE 2023-2024: 
+------------------------------ 
+CONSENSYS TOKEN DEVELOPMENT IS JUST FOR PRACTISE AND TESTS, ALWAYS USE OPENZEPPLINE FOR PRODUCTION CONTRACTS
+TEST NETWORK: USE SEPOLIA TEST NETWORK BECAUSE ROSPTEN AND RINKEBAY ARE DEPRECIATED / OBSOLETE)
+
 Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
+
+
 .*/
 
 //0xd4eC4A2439f27E059E6CD76751AFe75BBb04D936
 
-pragma solidity >=0.4.21 <0.9.0;
+pragma solidity >=0.8.21 <0.9.0;
 
 import "./EIP20Interface.sol";
 
@@ -48,11 +55,11 @@ contract FarToken is EIP20Interface {
     }
 
     function transferFrom(address _from, address _to, uint256 _value) override public returns (bool success) {
-        uint256 allowance = allowed[_from][msg.sender];
-        require(balances[_from] >= _value && allowance >= _value);
+        uint256 allowances = allowed[_from][msg.sender];
+        require(balances[_from] >= _value && allowances >= _value);
         balances[_to] += _value;
         balances[_from] -= _value;
-        if (allowance < MAX_UINT256) {
+        if (allowances < MAX_UINT256) {
             allowed[_from][msg.sender] -= _value;
         }
         emit Transfer(_from, _to, _value); //solhint-disable-line indent, no-unused-vars
