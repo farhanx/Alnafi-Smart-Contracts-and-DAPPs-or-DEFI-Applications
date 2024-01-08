@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# ELECTION DAPP USECASE
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project will demonstrate how a decentralized voting system for any authority can be built. This is using Harhat framework , Web3J library for the front end and Html/JS files. 
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+This is a web3 app connected with the Metamask for any kind of blockchain based interaction.
